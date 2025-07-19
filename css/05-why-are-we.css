@@ -1,0 +1,43 @@
+.whyAreWe {
+  width: 100%;
+  padding: 80px 0px 80px 0px;
+  background: rgba(46, 44, 47, 1);
+}
+
+.whyAreWeTitle {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+  color: #fff;
+}
+
+.whyAreWeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.whyAreWeRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.whyAreWeBlock {
+  display: flex;
+  width: 33%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.whyAreWeBlock .darkBlock {
+  display: flex;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 25px 0px 0px 0px;
+  justify-content: center;
+}

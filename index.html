@@ -1,168 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="centerContainer">
+      <div class="headerNav">
+        <ul>
+          <li>Главная</li>
+          <li>Производство</li>
+          <li>Контакты</li>
+        </ul>
+        <div class="contacts">т. 8-800-000-88-88</div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="banner">
       <div class="centerContainer">
-        <div class="headerNav">
-          <ul>
-            <li>Главная</li>
-            <li>Производство</li>
-            <li>Контакты</li>
-          </ul>
-          <div class="contacts">т. 8-800-000-88-88</div>
+        <div class="bannerDescriptionContainer">
+          <h1 class="bannerTitle">СМАРТЭЛСИС</h1>
+          <div class="bannerSubtitle">автоматизация управления оборудованием</div>
         </div>
       </div>
-    </header>
-    <div class="main">
-      <div class="banner">
-        <div class="centerContainer">
-          <div class="bannerDescriptionContainer">
-            <h1 class="bannerTitle">СМАРТЭЛСИС</h1>
-            <div class="bannerSubtitle">автоматизация управления оборудованием</div>
-          </div>
+    </div>
+    <div class="services">
+      <div class="centerContainer">
+        <h2 class="servicesTitle">Услуги ООО "Смартэлсис":</h2>
+        <div class="servicesSubtitle">
+          Мы проектируем и производим системы промышленной автоматизации на базе современных АСУ
+          ТП с использованием программируемых логических контроллеров  PLC, HMI-панелей и
+          промышленных компьютеров.
         </div>
-      </div>
-      <div class="services">
-        <div class="centerContainer">
-          <h2 class="servicesTitle">Услуги ООО "Смартэлсис":</h2>
-          <div class="servicesSubtitle">
-            Мы проектируем и производим системы промышленной автоматизации на базе современных АСУ
-            ТП с использованием программируемых логических контроллеров  PLC, HMI-панелей и
-            промышленных компьютеров.
-          </div>
 
-          <div class="servicesContainer">
-            <div class="servicesRow">
-              <div class="serviceBlock">
-                <div class="darkBlock"></div>
-                <div class="lightBlock">
-                  <div class="serviceTitle">Учёт ресурсов в ЖКХ</div>
-                  <div class="serviceDescription">
-                    Создание систем учета тепла, воды и электроэнергии на объектах ЖКХ, их
-                    проектирование, монтаж и ввод в эксплуатация.
-                  </div>
-                </div>
-              </div>
-              <div class="serviceBlock">
-                <div class="darkBlock"></div>
-                <div class="lightBlock">
-                  <div class="serviceTitle">Удалённый контроль оборудования</div>
-                  <div class="serviceDescription">
-                    Организация диспетчерских пунктов мониторинга и управления удаленным
-                    оборудованием, не имеющим местного обслуживающего персонала.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="servicesRow">
-              <div class="serviceBlock">
-                <div class="darkBlock"></div>
-                <div class="lightBlock">
-                  <div class="serviceTitle">Автоматизированный сбор данных ЖКХ</div>
-                  <div class="serviceDescription">
-                    Создание систем автоматизированного сбора данных с приборов учета тепла, воды и
-                    электроэнергии на объектах ЖКХ, с передачей отчетных документов в снабжающие
-                    организации, с возможностью интеграции в другие информационные системы и
-                    комплексы, в том числе размещение на серверах в интернет.
-                  </div>
-                </div>
-              </div>
-              <div class="serviceBlock">
-                <div class="darkBlock"></div>
-                <div class="lightBlock">
-                  <div class="serviceTitle">Экономия энергии за счет ЧП</div>
-                  <div class="serviceDescription">
-                    Повышение энерго-эффективности производства, путем оснащения оборудования с
-                    электроприводом частотными преобразователями с управлением в режиме
-                    автоматического регулирования или поддержания в заданных пределах необходимых
-                    параметров.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="servicesRow">
-              <div class="serviceBlock">
-                <div class="darkBlock"></div>
-                <div class="lightBlock">
-                  <div class="serviceTitle">Разработка ПО для нестандартного оборудования</div>
-                  <div class="serviceDescription">
-                    Разработка заказного программного обеспечения и оснащение аппаратурой для работы
-                    с не типовым оборудованием или оборудованием, не имеющим каких либо интерфейсов
-                    предназначенных для обмена данными.
-                  </div>
-                </div>
-              </div>
-              <div class="serviceBlock">
-                <div class="darkBlock"></div>
-                <div class="lightBlock">
-                  <div class="serviceTitle">Замена релейной автоматики на ПЛК</div>
-                  <div class="serviceDescription">
-                    Модернизация устаревшей автоматики управления станками и механизмами,
-                    производственными поточными линиями и технологическими участками путем замены
-                    устаревшей релейной автоматики на современные элементы модульной автоматики на
-                    базе распределенной архитектуры программируемых логических контроллеров, для
-                    достижения заданных характеристик надежности и отказоустойчивости.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-wrapper">
-        <div class="centerContainer">
-          <div class="slider-container">
-            <div class="slider">
-              <img class="slide slider_1" src="images/slide_1.webp" alt="оборудование" />
-
-              <img class="slide slider_2" src="images/slide_2.webp" alt="оборудование" />
-
-              <img class="slide slider_3" src="images/slide_3.webp" alt="оборудование" />
-
-              <img class="slide slider_1" src="images/slide_1.webp" alt="оборудование" />
-
-              <img class="slide slider_2" src="images/slide_2.webp" alt="оборудование" />
-
-              <img class="slide slider_3" src="images/slide_3.webp" alt="оборудование" />
-              <img class="slide slider_1" src="images/slide_1.webp" alt="оборудование" />
-
-              <img class="slide slider_2" src="images/slide_2.webp" alt="оборудование" />
-
-              <img class="slide slider_3" src="images/slide_3.webp" alt="оборудование" />
-            </div>
-          </div>
-          <div class="sliderBattonContainer">
-            <div class="sliderBtn next-btn"><span>&lsaquo;</span></div>
-            <div class="sliderBtn prev-btn"><span>&rsaquo;</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="whyAreWe">
-        <div class="centerContainer">
-          <div class="whyAreWeTitle">Почему Вам стоит обратиться в ООО Смартэлсис:</div>
-
-          <div class="whyAreWeContainer">
-            <div class="whyAreWeRow">
+        <div class="servicesContainer">
+          <div class="servicesRow">
+            <div class="serviceBlock">
               <div class="darkBlock"></div>
               <div class="lightBlock">
-                <div class="whyAreWeDescription">
+                <div class="serviceTitle">Учёт ресурсов в ЖКХ</div>
+                <div class="serviceDescription">
                   Создание систем учета тепла, воды и электроэнергии на объектах ЖКХ, их
-                  проектирование, монтаж и ввод в эксплуатация.
+                  проектирование, монтаж и ввод в эксплуатацию.
+                </div>
+              </div>
+            </div>
+            <div class="serviceBlock">
+              <div class="darkBlock"></div>
+              <div class="lightBlock">
+                <div class="serviceTitle">Удалённый контроль оборудования</div>
+                <div class="serviceDescription">
+                  Организация диспетчерских пунктов мониторинга и управления удаленным
+                  оборудованием, не имеющим местного обслуживающего персонала.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="servicesRow">
+            <div class="serviceBlock">
+              <div class="darkBlock"></div>
+              <div class="lightBlock">
+                <div class="serviceTitle">Автоматизированный сбор данных ЖКХ</div>
+                <div class="serviceDescription">
+                  Создание систем автоматизированного сбора данных с приборов учета тепла, воды и
+                  электроэнергии на объектах ЖКХ, с передачей отчетных документов в снабжающие
+                  организации, с возможностью интеграции в другие информационные системы и
+                  комплексы, в том числе размещение на серверах в интернет.
+                </div>
+              </div>
+            </div>
+            <div class="serviceBlock">
+              <div class="darkBlock"></div>
+              <div class="lightBlock">
+                <div class="serviceTitle">Экономия энергии за счет ЧП</div>
+                <div class="serviceDescription">
+                  Повышение энерго-эффективности производства, путем оснащения оборудования с
+                  электроприводом частотными преобразователями с управлением в режиме
+                  автоматического регулирования или поддержания в заданных пределах необходимых
+                  параметров.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="servicesRow">
+            <div class="serviceBlock">
+              <div class="darkBlock"></div>
+              <div class="lightBlock">
+                <div class="serviceTitle">Разработка ПО для нестандартного оборудования</div>
+                <div class="serviceDescription">
+                  Разработка заказного программного обеспечения и оснащение аппаратурой для работы
+                  с не типовым оборудованием или оборудованием, не имеющим каких либо интерфейсов
+                  предназначенных для обмена данными.
+                </div>
+              </div>
+            </div>
+            <div class="serviceBlock">
+              <div class="darkBlock"></div>
+              <div class="lightBlock">
+                <div class="serviceTitle">Замена релейной автоматики на ПЛК</div>
+                <div class="serviceDescription">
+                  Модернизация устаревшей автоматики управления станками и механизмами,
+                  производственными поточными линиями и технологическими участками путем замены
+                  устаревшей релейной автоматики на современные элементы модульной автоматики на
+                  базе распределенной архитектуры программируемых логических контроллеров, для
+                  достижения заданных характеристик надежности и отказоустойчивости.
                 </div>
               </div>
             </div>
@@ -170,6 +125,108 @@
         </div>
       </div>
     </div>
-    <script src="js/slider.js"></script>
-  </body>
+    <div class="slider-wrapper">
+      <div class="centerContainer">
+        <div class="slider-container">
+          <div class="slider">
+            <img class="slide slider_1" src="images/slide_1.webp" alt="оборудование" />
+
+            <img class="slide slider_2" src="images/slide_2.webp" alt="оборудование" />
+
+            <img class="slide slider_3" src="images/slide_3.webp" alt="оборудование" />
+
+            <img class="slide slider_1" src="images/slide_1.webp" alt="оборудование" />
+
+            <img class="slide slider_2" src="images/slide_2.webp" alt="оборудование" />
+
+            <img class="slide slider_3" src="images/slide_3.webp" alt="оборудование" />
+            <img class="slide slider_1" src="images/slide_1.webp" alt="оборудование" />
+
+            <img class="slide slider_2" src="images/slide_2.webp" alt="оборудование" />
+
+            <img class="slide slider_3" src="images/slide_3.webp" alt="оборудование" />
+          </div>
+        </div>
+        <div class="sliderBattonContainer">
+          <div class="sliderBtn next-btn"><span>&lsaquo;</span></div>
+          <div class="sliderBtn prev-btn"><span>&rsaquo;</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="whyAreWe">
+      <div class="centerContainer">
+        <div class="whyAreWeTitle">Почему Вам стоит обратиться в ООО Смартэлсис:</div>
+
+        <div class="whyAreWeContainer">
+          <div class="whyAreWeRow">
+            <div class="whyAreWeBlock">
+              <div class="darkBlock">1</div>
+              <div class="lightBlock">
+                <div class="whyAreWeDescription">
+                  Весь цикл от проектирования
+                  до изготовления изделий
+                  локализован на 100% 
+                </div>
+              </div>
+            </div>
+            <div class="whyAreWeBlock">
+              <div class="darkBlock">2</div>
+              <div class="lightBlock">
+                <div class="whyAreWeDescription">
+                  Гарантия на изделия нашего
+                  производства от 2 до 3 лет! 
+                </div>
+              </div>
+            </div>
+            <div class="whyAreWeBlock">
+              <div class="darkBlock">3</div>
+              <div class="lightBlock">
+                <div class="whyAreWeDescription">
+                  Пост гарантийное
+                  обслуживание осуществляется
+                  оперативно и качественно, так как
+                  Мы являемся разработчиком
+                  и изготовителем
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="whyAreWeRow">
+            <div class="whyAreWeBlock">
+              <div class="darkBlock">4</div>
+              <div class="lightBlock">
+                <div class="whyAreWeDescription">
+                  Закупка комплектующих ведется напрямую от производителя, в том числе в КНР, соответственно конечная
+                  цена всегда будет дешевле, как минимум на 30%, чем у наших конкурентов.
+                </div>
+              </div>
+            </div>
+            <div class="whyAreWeBlock">
+              <div class="darkBlock">5</div>
+              <div class="lightBlock">
+                <div class="whyAreWeDescription">
+                  Если в спецификации есть преобразователи частоты, контроллеры, коммуникационное оборудование, так как
+                  по этим позициям Мы ведем закупку без посредников в России.
+                </div>
+              </div>
+            </div>
+            <div class="whyAreWeBlock">
+              <div class="darkBlock">6</div>
+              <div class="lightBlock">
+                <div class="whyAreWeDescription">
+                  Техническое обслуживание АСУ ТП, КИПиА, а так же метрологическое сопровождение с организацией
+                  проведения государственной поверки средств измерений.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/slider.js"></script>
+</body>
+
 </html>
