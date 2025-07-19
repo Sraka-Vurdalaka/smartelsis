@@ -41,3 +41,14 @@
   padding: 25px 0px 0px 0px;
   justify-content: center;
 }
+
+
+.mapContainer {
+  background: rgba(46, 44, 47, 1);
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+
+}
