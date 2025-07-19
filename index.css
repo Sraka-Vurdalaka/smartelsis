@@ -1,5 +1,7 @@
-@import url('./css/01-banner.css');
-@import url('./css/02-header.css');
+@import url('./css/01-header.css');
+@import url('./css/02-banner.css');
+@import url('./css/03-services.css');
+@import url('./css/04-slider.css');
 
 * {
   padding: 0px;
@@ -7,9 +9,8 @@
 }
 
 body {
-  background: #E3E3E5;
-  font-family: "Inter", sans-serif;
-
+  background: rgb(227, 227, 229);
+  font-family: 'Inter', sans-serif;
 }
 
 .centerContainer {

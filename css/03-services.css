@@ -1,0 +1,64 @@
+.services {
+  padding: 80px 0px 80px 0px;
+}
+
+.servicesTitle {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+.servicesSubtitle {
+  max-width: 970px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px auto;
+  line-height: 36px;
+}
+
+.servicesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 0px 80px 0px;
+}
+.servicesRow {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.serviceBlock {
+  width: 100%;
+  display: flex;
+}
+.darkBlock {
+  width: 70px;
+  height: auto;
+  background: #954a3c;
+}
+.lightBlock {
+  width: 100%;
+  height: auto;
+  background: #ce5e39;
+  padding: 25px 25px 35px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.serviceTitle {
+  max-width: 610px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.serviceDescription {
+  max-width: 625px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}
