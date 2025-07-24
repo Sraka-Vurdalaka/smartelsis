@@ -23,5 +23,21 @@
 .bannerSubtitle {
   font-size: 22px;
   font-weight: 500;
-  color: #fff
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 480px;
+    background-position-x: center;
+  }
+
+  .bannerTitle {
+    font-size: 38px;
+  }
+
+  .bannerSubtitle {
+    font-size: 18px;
+    text-align: center;
+  }
 }

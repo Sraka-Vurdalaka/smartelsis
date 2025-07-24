@@ -8,6 +8,7 @@
   text-align: center;
   margin: 0px 0px 50px 0px;
 }
+
 .servicesSubtitle {
   max-width: 970px;
   font-size: 24px;
@@ -24,6 +25,7 @@
   gap: 20px;
   padding: 80px 0px 80px 0px;
 }
+
 .servicesRow {
   width: 100%;
   display: flex;
@@ -34,11 +36,13 @@
   width: 100%;
   display: flex;
 }
+
 .darkBlock {
   width: 70px;
   height: auto;
   background: #954a3c;
 }
+
 .lightBlock {
   width: 100%;
   height: auto;
@@ -48,6 +52,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
 .serviceTitle {
   max-width: 610px;
   font-weight: 400;
@@ -55,10 +60,48 @@
   line-height: 36px;
   color: #ffffff;
 }
+
 .serviceDescription {
   max-width: 625px;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .servicesTitle {
+    font-size: 22px;
+    margin: 0px 0px 40px 0px;
+    line-height: 32px;
+  }
+
+  .servicesSubtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .servicesRow {
+    flex-direction: column;
+  }
+
+  .darkBlock {
+    width: 30px;
+  }
+
+  .lightBlock {
+    padding: 22px 15px 35px 15px;
+  }
+
+  .serviceTitle {
+    font-size: 22px;
+  }
+
+  .serviceDescription {
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+  }
 }

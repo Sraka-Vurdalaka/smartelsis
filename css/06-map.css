@@ -1,0 +1,14 @@
+.mapContainer {
+  background: rgba(46, 44, 47, 1);
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+}
+
+/* !Делаем карту серой */
+[class*='ground-pane'] {
+  filter: grayscale(1) contrast(95%);
+  -webkit-filter: grayscale(1) contrast(95%);
+}
