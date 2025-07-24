@@ -12,3 +12,10 @@
   filter: grayscale(1) contrast(95%);
   -webkit-filter: grayscale(1) contrast(95%);
 }
+
+
+@media (max-width: 480px) {
+  #map {
+    height: 300px;
+  }
+}

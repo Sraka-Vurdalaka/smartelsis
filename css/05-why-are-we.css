@@ -42,17 +42,6 @@
   justify-content: center;
 }
 
-
-.mapContainer {
-  background: rgba(46, 44, 47, 1);
-}
-
-#map {
-  width: 100%;
-  height: 600px;
-
-}
-
 @media (max-width: 480px) {
   .whyAreWeTitle {
     font-size: 22px;
