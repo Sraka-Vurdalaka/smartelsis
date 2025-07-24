@@ -43,6 +43,7 @@
   font-size: 0;
   right: 120px;
 }
+
 .slick-next {
   background: url('../images/arrNext.svg');
   background-size: cover;
@@ -50,6 +51,7 @@
   font-size: 0;
   right: 0;
 }
+
 button {
   padding: 10px 20px;
   margin: 10px;
@@ -94,4 +96,18 @@ button {
 
 .prev-btn span {
   margin: -6px -3px 0px 0px;
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 240px;
+  }
+
+  .slide {
+    height: 240px;
+  }
+
+  .services {
+    padding: 80px 0px 80px 0px;
+  }
 }
