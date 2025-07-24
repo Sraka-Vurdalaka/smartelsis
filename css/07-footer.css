@@ -3,15 +3,32 @@ footer {
   color: #fff;
   background: rgba(46, 44, 47, 1);
 }
+
 .footerContainer {
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
+
 .footerBlock {
   line-height: 36px;
 }
 
 .footerBlock .link {
   text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+
+  .footerContainer {
+    flex-direction: column;
+    margin: 0px 20px;
+    gap: 40px;
+  }
+
+  .footerBlock {
+    font-size: 14px;
+    line-height: 36px;
+  }
 }
