@@ -66,7 +66,7 @@ ymaps.ready(function () {
       {
         hintContent: 'Смартэлсис',
         balloonContent:
-          '<div>Новосибирская область, Искитим, </div><div>Юбилейный проспект, 1Б / 2</div><div><img src="../images/enter.jpg" alt="smarelsist" style="width: 100%; height: 150px; object-fit: cover;"></div>',
+          '<div>Новосибирская область, Искитим, </div><div>Юбилейный проспект, 1Б / 2</div><div><img src="./images/enter.jpg" alt="smarelsist" style="width: 100%; height: 150px; object-fit: cover;"></div>',
       },
       {
         // Опции.
