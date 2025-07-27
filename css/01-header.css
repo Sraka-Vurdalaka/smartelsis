@@ -3,7 +3,6 @@ header {
   width: 100%;
   background: #00000000;
   background: linear-gradient(180deg, rgb(0 0 0), rgb(0 0 0 / 0%));
-
   z-index: 1;
 }
 
@@ -32,8 +31,47 @@ header {
   font-weight: 500;
 }
 
+/* Стили для выпадающего меню */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  color: #0066cc;
+}
+
+/* Анимация при наведении */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 @media (max-width: 480px) {
-  header {
+  .headerNav {
     display: none;
   }
 }
