@@ -41,6 +41,40 @@ $(document).ready(function () {
       },
     ],
   });
+
+  // Создаем элементы для модального окна
+  const modalOverlay = document.createElement('div');
+  modalOverlay.className = 'modal-overlay';
+  
+  const modalContent = document.createElement('div');
+  modalContent.className = 'modal-content';
+  
+  const modalImage = document.createElement('img');
+  modalImage.className = 'modal-image';
+  
+  modalContent.appendChild(modalImage);
+  modalOverlay.appendChild(modalContent);
+  document.body.appendChild(modalOverlay);
+
+  const style = document.createElement('style');
+  document.head.appendChild(style);
+  
+  // Получаем все изображения
+  const images = document.querySelectorAll('.gidravlicaImg img');
+  
+  // Добавляем обработчики клика
+  images.forEach(img => {
+    img.addEventListener('click', function() {
+      modalImage.src = this.src;
+      modalImage.alt = this.alt;
+      modalOverlay.style.display = 'flex';
+    });
+  });
+  
+  // Закрытие по клику на оверлей
+  modalOverlay.addEventListener('click', function() {
+    this.style.display = 'none';
+  });
 });
 
 //! Слайдер End
