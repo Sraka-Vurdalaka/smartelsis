@@ -1,0 +1,27 @@
+.gidrvlicaPhoto {
+  Padding: 80px 0px 0px 0px;
+}
+
+.gidrvlicaPhotoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gidravlicaRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gidravlicaImg {
+  width: 25%;
+  height: 300px;
+}
+
+.gidravlicaImg img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
