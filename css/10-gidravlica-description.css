@@ -1,7 +1,43 @@
 .gidrvlicaDescription {
   padding: 80px 0px 0px;
+  background: rgba(46, 44, 47, 1);
 }
 
-.centerContainer {}
+.gidrvlicaTitle {
+  max-width: 610px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px auto;
+}
 
-.gidrvlicaDescriptionContainer {}
+.gidrvlicaDescriptionContainer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.gidravlicaText {
+  border-bottom: 1px solid rgb(149, 74, 60, 0.5);
+  padding: 20px 0px 20px 0px;
+}
+
+@media (max-width: 480px) {
+  .gidrvlicaTitle {
+    font-size: 22px;
+    margin: 0px 0px 40px 0px;
+    line-height: 32px;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+  .gidrvlicaDescriptionContainer {
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+}

@@ -41,44 +41,12 @@ $(document).ready(function () {
       },
     ],
   });
-
-  // Создаем элементы для модального окна
-  const modalOverlay = document.createElement('div');
-  modalOverlay.className = 'modal-overlay';
-  
-  const modalContent = document.createElement('div');
-  modalContent.className = 'modal-content';
-  
-  const modalImage = document.createElement('img');
-  modalImage.className = 'modal-image';
-  
-  modalContent.appendChild(modalImage);
-  modalOverlay.appendChild(modalContent);
-  document.body.appendChild(modalOverlay);
-
-  const style = document.createElement('style');
-  document.head.appendChild(style);
-  
-  // Получаем все изображения
-  const images = document.querySelectorAll('.gidravlicaImg img');
-  
-  // Добавляем обработчики клика
-  images.forEach(img => {
-    img.addEventListener('click', function() {
-      modalImage.src = this.src;
-      modalImage.alt = this.alt;
-      modalOverlay.style.display = 'flex';
-    });
-  });
-  
-  // Закрытие по клику на оверлей
-  modalOverlay.addEventListener('click', function() {
-    this.style.display = 'none';
-  });
 });
 
 //! Слайдер End
 
+
+//! Яндекс карта Start
 ymaps.ready(function () {
   var myMap = new ymaps.Map(
     'map',
@@ -119,16 +87,16 @@ ymaps.ready(function () {
   myMap.geoObjects.add(myPlacemark);
 });
 
+//! Яндекс карта END
+
 document.addEventListener('DOMContentLoaded', function () {
   const banner = document.querySelector('.banner');
 
+  //! Эффекты параллакса и плавного появления элементов на страницах Start
   // Функция для параллакс-эффекта
   function parallaxEffect() {
     const scrolled = window.pageYOffset;
     const rate = scrolled * -0.5; // Скорость параллакса
-
-    // Применяем трансформацию к псевдоэлементу через CSS переменную
-    // banner.style.setProperty('--parallax-offset', rate + 'px');
   }
 
   // Функция для анимации появления элементов
@@ -168,8 +136,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Инициализация при загрузке
   parallaxEffect();
   animateOnScroll();
+  //! Эффекты параллакса и плавного появления элементов на страницах END
 
 
+  //! Появление бургер-меню Start
   const burgerIcon = document.getElementById('burgerIcon');
   const mobileMenu = document.getElementById('mobileMenu');
   const mobileMenuClose = document.getElementById('mobileMenuClose');
@@ -235,6 +205,54 @@ document.addEventListener('DOMContentLoaded', function () {
   mobileMenu.addEventListener('click', function (e) {
     e.stopPropagation();
   });
+  //! Появление бургер-меню END
+
+
+   //! Появление модального окна с фотографией Start 
+ // Сначала добавляем стили в head
+ const style = document.createElement('style');
+ document.head.appendChild(style);
+
+ // Затем создаем элементы
+ const modalOverlay = document.createElement('div');
+ modalOverlay.className = 'modal-overlay';
+ 
+ const modalContent = document.createElement('div');
+ modalContent.className = 'modal-content';
+ 
+ const modalImage = document.createElement('img');
+ modalImage.className = 'modal-image';
+ 
+ modalContent.appendChild(modalImage);
+ modalOverlay.appendChild(modalContent);
+ document.body.appendChild(modalOverlay);
+
+ // Остальной код без изменений
+ const images = document.querySelectorAll('.gidravlicaImg img');
+ 
+ images.forEach(img => {
+   img.addEventListener('click', function() {
+     modalImage.src = this.src;
+     modalImage.alt = this.alt;
+     modalOverlay.classList.add('active');
+     document.body.style.overflow = 'hidden';
+   });
+ });
+ 
+ modalOverlay.addEventListener('click', function(e) {
+   if (e.target === modalOverlay || e.target === modalContent) {
+     this.classList.remove('active');
+     document.body.style.overflow = '';
+   }
+ });
+ 
+ document.addEventListener('keydown', function(e) {
+   if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+     modalOverlay.classList.remove('active');
+     document.body.style.overflow = '';
+   }
+ });
+     //! Появление модального окна с фотографией END 
 });
 
 

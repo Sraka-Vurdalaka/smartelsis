@@ -1,5 +1,6 @@
 .gidrvlicaPhoto {
   Padding: 80px 0px 0px 0px;
+  background: linear-gradient(180deg, rgba(1227, 227, 229, 0), rgba(46, 44, 47, 1));
 }
 
 .gidrvlicaPhotoContainer {
@@ -32,48 +33,44 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: auto;
 }
 
 .modal-content {
   max-width: 90%;
   max-height: 90%;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .modal-image {
   max-width: 100%;
   max-height: 90vh;
   object-fit: contain;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.modal-content {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.modal-image {
-  max-width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 480px) {
@@ -82,18 +79,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding: 0px 20px;
   }
 
   .gidravlicaImg {
-    width: 150px;
-    height: 140px;
+    width: 170px;
+    height: 160px;
   }
 
   .gidravlicaImg img {
     display: block;
     width: 100%;
-    height: 140px;
+    height: 160px;
     object-fit: cover;
   }
 }
