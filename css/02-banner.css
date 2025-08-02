@@ -5,6 +5,13 @@
   background-size: cover;
 }
 
+.bannerGidravlica {
+  width: 100%;
+  height: 612px;
+  background: url('./../images/gidaravlika-banner.JPG');
+  background-size: cover;
+}
+
 .bannerDescriptionContainer {
   display: flex;
   flex-direction: column;
@@ -27,18 +34,21 @@
 }
 
 @media (max-width: 480px) {
-  .banner {
+
+  .banner,
+  .bannerGidravlica {
     height: 480px;
     background-position-x: center;
   }
 
   .bannerTitle {
     font-size: 38px;
+    text-align: center;
   }
 
   .bannerSubtitle {
     font-size: 18px;
     text-align: center;
+    padding: 0px 45px;
   }
 }
-

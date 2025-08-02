@@ -87,7 +87,6 @@ ymaps.ready(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   const banner = document.querySelector('.banner');
-  const bannerBefore = banner.querySelector('::before');
 
   // Функция для параллакс-эффекта
   function parallaxEffect() {
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const rate = scrolled * -0.5; // Скорость параллакса
 
     // Применяем трансформацию к псевдоэлементу через CSS переменную
-    banner.style.setProperty('--parallax-offset', rate + 'px');
+    // banner.style.setProperty('--parallax-offset', rate + 'px');
   }
 
   // Функция для анимации появления элементов
@@ -135,4 +134,73 @@ document.addEventListener('DOMContentLoaded', function () {
   // Инициализация при загрузке
   parallaxEffect();
   animateOnScroll();
+
+
+  const burgerIcon = document.getElementById('burgerIcon');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenuClose = document.getElementById('mobileMenuClose');
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+  // Функция открытия меню
+  function openMobileMenu() {
+    burgerIcon.classList.add('active');
+    mobileMenu.classList.add('active');
+    mobileMenuOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Функция закрытия меню
+  function closeMobileMenu() {
+    burgerIcon.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    mobileMenuOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Обработчик клика по бургеру
+  burgerIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  // Обработчик клика по кнопке закрытия
+  mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+  // Обработчик клика по оверлею
+  mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+  // Обработчик выпадающего меню в мобильной версии
+  const mobileDropdowns = mobileMenu.querySelectorAll('.dropdown');
+  mobileDropdowns.forEach((dropdown) => {
+    const btnDropdown = dropdown.querySelector('.btnDropdown');
+    btnDropdown.addEventListener('click', function (e) {
+      e.preventDefault();
+      dropdown.classList.toggle('active');
+    });
+  });
+
+  // Закрытие меню при клике на пункт
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  // Закрытие меню при нажатии Escape
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
+
+  // Предотвращение закрытия при клике внутри меню
+  mobileMenu.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
 });
+
+

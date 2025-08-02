@@ -5,9 +5,11 @@ header {
   background: linear-gradient(180deg, rgb(0 0 0), rgb(0 0 0 / 0%));
   z-index: 1;
 }
+
 .headerNavMobile {
   display: none;
 }
+
 .headerNav {
   display: flex;
   padding: 25px 0px;
@@ -38,12 +40,16 @@ header {
 }
 
 /* Стили для выпадающего меню НАЧАЛО*/
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 50px;
-  left: 180px;
+  left: 0px;
   width: 200px;
   background: #000000ab;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +60,7 @@ header {
   transition: all 0.3s ease;
   z-index: 100;
   padding: 10px 0;
-  gap: 10px !important ;
+  gap: 10px !important;
 }
 
 .dropdown-menu li {
@@ -67,9 +73,11 @@ header {
   text-decoration: none;
   transition: color 0.2s;
 }
+
 .headerNav a:hover {
   color: #ce5e39;
 }
+
 .btnDropdown:hover {
   color: #ce5e39;
 }
@@ -86,7 +94,8 @@ header {
 
 /* Стили для бургер-иконки */
 .burger-icon {
-  display: none; /* По умолчанию скрыта */
+  display: none;
+  /* По умолчанию скрыта */
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -166,9 +175,11 @@ header {
 .headerNavMobile ul li:nth-child(1) {
   transition-delay: 0.3s;
 }
+
 .headerNavMobile ul li:nth-child(2) {
   transition-delay: 0.4s;
 }
+
 .headerNavMobile ul li:nth-child(3) {
   transition-delay: 0.5s;
 }

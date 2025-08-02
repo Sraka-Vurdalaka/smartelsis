@@ -21,7 +21,10 @@ body {
   max-width: 1580px;
   height: 100%;
   margin: 0px auto;
-    overflow: hidden;
+}
+
+.hidderContainer {
+  overflow: hidden;
 }
 
 .main {
