@@ -252,7 +252,8 @@ document.addEventListener('DOMContentLoaded', function () {
      document.body.style.overflow = '';
    }
  });
-     //! Появление модального окна с фотографией END 
+     //! Появление модального окна с фотографией END
+
 });
 
 
