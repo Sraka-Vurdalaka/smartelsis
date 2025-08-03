@@ -8,6 +8,7 @@
 @import url('./css/08-animations.css');
 @import url('./css/09-gidravlica-photo.css');
 @import url('./css/10-gidravlica-description.css');
+@import url('./css/11-automatica-title.css');
 
 * {
   padding: 0px;
@@ -25,7 +26,7 @@ body {
   margin: 0px auto;
 }
 
-.hidderContainer {
+.hiddenContainer {
   overflow: hidden;
 }
 
