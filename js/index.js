@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
  document.body.appendChild(modalOverlay);
 
  // Остальной код без изменений
- const images = document.querySelectorAll('.gidravlicaImg img');
+ const images = document.querySelectorAll('.subpageImg img');
  
  images.forEach(img => {
    img.addEventListener('click', function() {

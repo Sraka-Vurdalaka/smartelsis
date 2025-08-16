@@ -1,0 +1,42 @@
+.advantagesFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.advantageCard {
+  width: 45%;
+  background: #ce5e39;
+  padding: 25px 25px 35px 35px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.advantageCard .titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.advantageCard .titleContainer img {
+  display: block;
+  width: 70px;
+}
+
+.advantageCard .titleContainer h3 {
+  max-width: 610px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.advantageCard p {
+  max-width: 625px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}

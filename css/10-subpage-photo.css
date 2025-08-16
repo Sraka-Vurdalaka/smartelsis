@@ -1,26 +1,27 @@
-.gidrvlicaPhoto {
+.subpagePhoto {
   Padding: 80px 0px 0px 0px;
   background: linear-gradient(180deg, rgba(1227, 227, 229, 0), rgba(46, 44, 47, 1));
 }
 
-.gidrvlicaPhotoContainer {
+.subpagePhotoContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.gidravlicaRow {
+.subpageRow {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.gidravlicaImg {
+.subpageImg {
   width: 25%;
   height: 300px;
+  cursor: pointer;
 }
 
-.gidravlicaImg img {
+.subpageImg img {
   display: block;
   width: 100%;
   height: 300px;
@@ -73,20 +74,21 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+
 @media (max-width: 480px) {
-  .gidravlicaRow {
+  .subpageRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
   }
 
-  .gidravlicaImg {
+  .subpageImg {
     width: 170px;
     height: 160px;
   }
 
-  .gidravlicaImg img {
+  .subpageImg img {
     display: block;
     width: 100%;
     height: 160px;
